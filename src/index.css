@@ -1,0 +1,154 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/* Basic styling and layout */
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 2px solid black;
+  border-radius: 1cm;
+  background: #A1D6E2;
+}
+
+.event-form input,
+.event-form select,
+.event-form button {
+  margin: 10px 0;
+  padding: 8px;
+  display: block;
+  width: 100%;
+}
+
+.dot {
+  height: 8px;
+  width: 8px;
+  background-color: #4caf50;
+  border-radius: 50%;
+  margin: 0 auto;
+}
+
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  padding: 20px;
+  margin:auto;
+  box-shadow: 0px 0px 10px rgba(0,0, 0, 0.1);
+  border-radius: 8px;
+  z-index: 1000;
+  width: 200px;
+  
+  background-color: #e0e0e0;
+}
+
+.edit-form input,
+.edit-form select {
+  margin: 10px 0;
+  padding: 8px;
+  width: 100%;
+}
+
+button {
+  padding: 8px 12px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.events-list {
+  margin-top: 20px;
+}
+
+.event-item {
+  padding: 10px;
+  background-color: #f5f5f5;
+  margin: 5px 0;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.event-item:hover {
+  background-color: #e0e0e0;
+}
+
+/* Calendar styling */
+/* Ensure the calendar is styled correctly */
+.react-calendar {
+  width: 100%;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+/* Style for calendar tiles */
+.react-calendar__tile {
+  padding: 8px;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+/* Style for current month dates */
+.current-month {
+  color: #000; /* Black color for current month dates */
+}
+
+/* Style for previous/next month dates */
+.other-month {
+  color: #ccc; /* Grey color for previous/next month dates */
+}
+
+/* Add dot indicator for events */
+.dot {
+  width: 8px;
+  height: 8px;
+  background-color: red;
+  border-radius: 50%;
+  margin: 0 auto;
+}
+
+/* Ensure visibility and correct styling of hover */
+.react-calendar__tile:hover {
+  background-color: #f0f0f0;
+}
+
+
+/* Optional: Additional styles for better layout and spacing */
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.events-list {
+  margin-top: 20px;
+}
+
+.event-item {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.event-item:hover {
+  background-color: #f9f9f9;
+}
+.react-calendar__navigation {
+  background-color: #1995AD; /* Background color of the header */
+  color: #333; /* Default color for text */
+}
+.react-calendar__year-view .react-calendar__tile, .react-calendar__decade-view .react-calendar__tile, .react-calendar__century-view .react-calendar__tile {
+  color: #000;
+}

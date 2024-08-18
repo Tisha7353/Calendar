@@ -1,0 +1,8 @@
+.dot {
+  height: 8px;
+  width: 8px;
+  background-color: #4caf50; /* Adjust the color as needed */
+  border-radius: 50%;
+  margin: 0 auto;
+  margin-top: 2px;
+}
