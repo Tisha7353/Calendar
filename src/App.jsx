@@ -1,4 +1,5 @@
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+
+import {  HashRouter as Router, Route, Routes, HashRouter } from "react-router-dom";
 import CalendarView from "./components/CalendarView";
 import EventProvider from "./context/EventContext";
 import { ToastContainer } from 'react-toastify'; // Import ToastContainer
@@ -7,7 +8,7 @@ import 'react-toastify/dist/ReactToastify.css'; // Import CSS for toast notifica
 const App = () => {
   return (
     <EventProvider>
-      <Router>
+    <HashRouter>
         <Routes>
           <Route path="/" element={<CalendarView />} />
         </Routes>
@@ -23,7 +24,7 @@ const App = () => {
           draggable
           pauseOnHover
         />
-      </Router>
+      </HashRouter>
     </EventProvider>
   );
 };
